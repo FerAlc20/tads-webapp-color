@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Color RGB 🎨</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow-lg p-4">
+      <h2 class="text-center mb-4 fw-bold text-primary">🎨Generador de Color RGB</h2>
+      
+      <!-- Recuadro de color -->
+      <div id="color-box" class="rounded shadow mb-3"></div>
+      <p class="text-center fw-bold fs-5">Código Hex: <span id="codigo-hex" class="text-primary">#000000</span></p>
+
+      <!-- Controles de color -->
+      <div class="row text-center">
+        <div class="col-4">
+          <label for="rojo" class="form-label fw-bold text-danger">Rojo (R)</label>
+          <input type="number" class="form-control text-center input-color" id="input-rojo" min="0" max="255" value="0">
+          <input type="range" class="form-range mt-2 custom-slider" id="rojo" min="0" max="255" value="0">
+        </div>
+        <div class="col-4">
+          <label for="verde" class="form-label fw-bold text-success">Verde (G)</label>
+          <input type="number" class="form-control text-center input-color" id="input-verde" min="0" max="255" value="0">
+          <input type="range" class="form-range mt-2 custom-slider" id="verde" min="0" max="255" value="0">
+        </div>
+        <div class="col-4">
+          <label for="azul" class="form-label fw-bold text-info">Azul (B)</label>
+          <input type="number" class="form-control text-center input-color" id="input-azul" min="0" max="255" value="0">
+          <input type="range" class="form-range mt-2 custom-slider" id="azul" min="0" max="255" value="0">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
